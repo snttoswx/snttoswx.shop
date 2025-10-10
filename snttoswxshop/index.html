@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>snttoswx - Cursos de Programação Profissionais</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="icon" type="image/png" href="snttoswx.jpg">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <i class="fas fa-code"></i>
+                    <span>snttoswx</span>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#cursos">Cursos</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#depoimentos">Depoimentos</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Domine a Programação e Transforme sua Carreira</h1>
+                <h2>Cursos completos para iniciantes e profissionais</h2>
+                <p>Aprenda com especialistas do mercado e desenvolva habilidades que estão em alta no mercado de trabalho. Do básico ao avançado, temos o curso perfeito para você.</p>
+                <div class="cta-buttons">
+                    <a href="#cursos" class="btn btn-primary">
+                        <i class="fas fa-rocket"></i>
+                        Ver Cursos
+                    </a>
+                    <a href="#contato" class="btn btn-secondary">
+                        <i class="fas fa-comment"></i>
+                        Fale Conosco
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cursos Section -->
+    <section id="cursos" class="apostilas-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Nossos Cursos</span>
+                <h2 class="section-title">Escolha sua Especialização</h2>
+                <p class="section-description">Cursos completos com metodologia prática e suporte especializado</p>
+            </div>
+
+            <div class="category-filter">
+                <button class="filter-btn active" data-filter="all">Todos</button>
+                <button class="filter-btn" data-filter="frontend">Frontend</button>
+                <button class="filter-btn" data-filter="backend">Backend</button>
+                <button class="filter-btn" data-filter="mobile">Mobile</button>
+                <button class="filter-btn" data-filter="ia">Inteligência Artificial</button>
+                <button class="filter-btn" data-filter="ferramentas">Ferramentas</button>
+            </div>
+
+            <div class="apostilas-grid">
+                <!-- Frontend -->
+                <div class="apostila-card" data-category="frontend">
+                    <div class="card-image">
+                        <img src="html.jpg" alt="Curso HTML5">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Curso Completo de HTML5</h3>
+                        <p class="card-description">Aprenda HTML5 do zero ao avançado com 42 aulas práticas</p>
+                        <div class="card-price">
+                            <span class="price">R$ 25,00</span>
+                            <span class="price-old">R$ 50,00</span>
+                        </div>
+                        <button class="card-button comprar-btn" data-product="Curso Completo de HTML5" data-price="97">
+                            Comprar Agora
+                        </button>
+                    </div>
+                </div>
+
+                <div class="apostila-card" data-category="frontend">
+                    <div class="card-image">
+                        <img src="css.jpg" alt="Curso CSS3">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Curso Completo de CSS3</h3>
+                        <p class="card-description">Domine CSS3 com 22 aulas completas e projetos reais</p>
+                        <div class="card-price">
+                            <span class="price">R$ 25,00</span>
+                            <span class="price-old">R$ 50,00</span>
+                        </div>
+                        <button class="card-button comprar-btn" data-product="Curso Completo de CSS3" data-price="87">
+                            Comprar Agora
+                        </button>
+                    </div>
+                </div>
+
+                <div class="apostila-card" data-category="frontend">
+                    <div class="card-image">
+                        <img src="js.jpg" alt="Curso JavaScript">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Curso Completo de JavaScript</h3>
+                        <p class="card-description">JavaScript moderno com 46 aulas do básico ao avançado</p>
+                        <div class="card-price">
+                            <span class="price">R$ 25,00</span>
+                            <span class="price-old">R$ 50,00</span>
+                        </div>
+                        <button class="card-button comprar-btn" data-product="Curso Completo de JavaScript" data-price="127">
+                            Comprar Agora
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Backend -->
+                <div class="apostila-card" data-category="backend">
+                    <div class="card-image">
+                        <img src="php.jpg" alt="Curso PHP">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Curso Completo de PHP</h3>
+                        <p class="card-description">PHP do zero com 108 aulas completas e projetos reais</p>
+                        <div class="card-price">
+                            <span class="price">R$ 15,00</span>
+                            <span class="price-old">R$ 30,00</span>
+                        </div>
+                        <button class="card-button comprar-btn" data-product="Curso Completo de PHP" data-price="147">
+                            Comprar Agora
+                        </button>
+                    </div>
+                </div>
+
+                <div class="apostila-card" data-category="backend">
+                    <div class="card-image">
+                        <img src="nodejs.jpg" alt="Curso NodeJS">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Curso de NodeJS</h3>
+                        <p class="card-description">Desenvolvimento backend com Node.js em 21 aulas práticas</p>
+                        <div class="card-price">
+                            <span class="price">R$ 20,00</span>
+                            <span class="price-old">R$ 40,00</span>
+                        </div>
+                        <button class="card-button comprar-btn" data-product="Curso de NodeJS" data-price="117">
+                            Comprar Agora
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Python -->
+                <div class="apostila-card" data-category="backend">
+                    <div class="card-image">
+                        <img src="python.jpg" alt="Curso Python">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Curso Completo de Python</h3>
+                        <p class="card-description">Python do básico ao avançado com projetos reais</p>
+                        <div class="card-price">
+                            <span class="price">R$ 25,00</span>
+                            <span class="price-old">R$ 50,00</span>
+                        </div>
+                        <button class="card-button comprar-btn" data-product="Curso Completo de Python" data-price="157">
+                            Comprar Agora
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Mobile -->
+                <div class="apostila-card" data-category="mobile">
+                    <div class="card-image">
+                        <img src="android.jpg" alt="Curso Android">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Curso de Desenvolvimento Android</h3>
+                        <p class="card-description">Crie apps Android do zero com 30 aulas completas</p>
+                        <div class="card-price">
+                            <span class="price">R$ 10,00</span>
+                            <span class="price-old">R$ 20,00</span>
+                        </div>
+                        <button class="card-button comprar-btn" data-product="Curso de Desenvolvimento Android" data-price="137">
+                            Comprar Agora
+                        </button>
+                    </div>
+                </div>
+
+                <div class="apostila-card" data-category="mobile">
+                    <div class="card-image">
+                        <img src="ios.jpg" alt="Curso iOS">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Curso de Desenvolvimento iOS</h3>
+                        <p class="card-description">Aprenda Swift e crie apps para iPhone e iPad</p>
+                        <div class="card-price">
+                            <span class="price">R$ 10,00</span>
+                            <span class="price-old">R$ 20,00</span>
+                        </div>
+                        <button class="card-button comprar-btn" data-product="Curso de Desenvolvimento iOS" data-price="147">
+                            Comprar Agora
+                        </button>
+                    </div>
+                </div>
+
+                <!-- IA -->
+                <div class="apostila-card" data-category="ia">
+                    <div class="card-image">
+                        <img src="chatgpt.jpg" alt="Curso ChatGPT">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Curso ChatGPT do Básico ao Avançado</h3>
+                        <p class="card-description">Domine o ChatGPT e revolucione sua produtividade</p>
+                        <div class="card-price">
+                            <span class="price">R$ 50,00</span>
+                            <span class="price-old">R$ 100,00</span>
+                        </div>
+                        <button class="card-button comprar-btn" data-product="Curso ChatGPT do Básico ao Avançado" data-price="197">
+                            Comprar Agora
+                        </button>
+                    </div>
+                </div>
+
+                <div class="apostila-card" data-category="ia">
+                    <div class="card-image">
+                        <img src="ia.jpg" alt="Curso IA">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Mestre da IA - Engenharia de Prompts</h3>
+                        <p class="card-description">Torne-se especialista em engenharia de prompts para IA</p>
+                        <div class="card-price">
+                            <span class="price">R$ 50,00</span>
+                            <span class="price-old">R$ 100,00</span>
+                        </div>
+                        <button class="card-button comprar-btn" data-product="Mestre da IA - Engenharia de Prompts" data-price="227">
+                            Comprar Agora
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Ferramentas -->
+                <div class="apostila-card" data-category="ferramentas">
+                    <div class="card-image">
+                        <img src="canva.jpg" alt="Pack Canva">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Pack de Designs para Canva</h3>
+                        <p class="card-description">Mais de 500 templates profissionais para Canva</p>
+                        <div class="card-price">
+                            <span class="price">R$ 47,00</span>
+                            <span class="price-old">R$ 97,00</span>
+                        </div>
+                        <button class="card-button comprar-btn" data-product="Pack de Designs para Canva" data-price="47">
+                            Comprar Agora
+                        </button>
+                    </div>
+                </div>
+
+                <div class="apostila-card" data-category="ferramentas">
+                    <div class="card-image">
+                        <img src="ias.jpg" alt="Pack IAs">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Pack de IAs Alternativas</h3>
+                        <p class="card-description">Coleção completa das melhores IAs do mercado</p>
+                        <div class="card-price">
+                            <span class="price">R$ 67,00</span>
+                            <span class="price-old">R$ 137,00</span>
+                        </div>
+                        <button class="card-button comprar-btn" data-product="Pack de IAs Alternativas" data-price="67">
+                            Comprar Agora
+                        </button>
+                    </div>
+                </div>
+
+                <div class="apostila-card" data-category="ferramentas">
+                    <div class="card-image">
+                        <img src="telegram.jpg" alt="Grupo Telegram">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Acesso Grupo Telegram</h3>
+                        <p class="card-description">Acesso vitalício ao nosso grupo exclusivo no Telegram</p>
+                        <div class="card-price">
+                            <span class="price">R$ 100,00</span>
+                            <span class="price-old">R$ 200,00</span>
+                        </div>
+                        <button class="card-button comprar-btn" data-product="Acesso Grupo Telegram" data-price="37">
+                            Comprar Agora
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre Section -->
+    <section id="sobre" class="staff-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Desenvolvedor do Site</span>
+                <h2 class="section-title">Especialistas em Ensino de Tecnologia</h2>
+                <p class="section-description">Aprenda com profissionais que estão no mercado há mais de 10 anos</p>
+            </div>
+            <div class="staff-grid">
+                <div class="staff-member">
+                    <div class="staff-avatar">
+                        <img src="saints.gif" alt="snttoswx">
+                    </div>
+                    <h3 class="staff-name">snttoswx</h3>
+                    <p class="staff-role">Fundador & Especialista em IA</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Depoimentos Section -->
+    <section id="depoimentos" class="depoimentos-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Depoimentos</span>
+                <h2 class="section-title">O que Nossos Alunos Dizem</h2>
+                <p class="section-description">Mais de 5.000 alunos já transformaram suas carreiras com nossos cursos</p>
+            </div>
+            <div class="depoimentos-grid">
+                <div class="depoimento-card">
+                    <div class="depoimento-text">
+                        "Comprei o curso de JavaScript e em 3 meses consegui minha primeira vaga como desenvolvedor frontend. O suporte é excelente!"
+                    </div>
+                    <div class="depoimento-author">
+                        <div class="author-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="author-info">
+                            <h4>Marcelo Santos</h4>
+                            <p>Desenvolvedor Frontend</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="depoimento-card">
+                    <div class="depoimento-text">
+                        "O curso de Python superou minhas expectativas. Consegui automatizar processos na minha empresa e fui promovido!"
+                    </div>
+                    <div class="depoimento-author">
+                        <div class="author-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="author-info">
+                            <h4>Patrícia Oliveira</h4>
+                            <p>Analista de Dados</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="depoimento-card">
+                    <div class="depoimento-text">
+                        "O curso de ChatGPT mudou completamente minha forma de trabalhar. Agora consigo produzir muito mais em menos tempo."
+                    </div>
+                    <div class="depoimento-author">
+                        <div class="author-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="author-info">
+                            <h4>Ricardo Ferreira</h4>
+                            <p>Marketing Digital</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato Section -->
+    <section id="contato" class="contato-section">
+        <div class="container">
+            <div class="contato-content">
+                <div class="contato-info">
+                    <h2>Entre em Contato</h2>
+                    <p>Tem dúvidas sobre nossos cursos? Fale conosco pelo WhatsApp!</p>
+                    <div class="contato-item">
+                        <i class="fab fa-whatsapp"></i>
+                        <div>
+                            <h3>WhatsApp</h3>
+                            <p>+55 (11) 93925-5690</p>
+                        </div>
+                    </div>
+                    <div class="contato-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>Email</h3>
+                            <p>iagosantosrocha67@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contato-form">
+                    <h3>Envie sua Mensagem</h3>
+                    <form id="form-contato">
+                        <input type="text" placeholder="Seu nome" required>
+                        <input type="email" placeholder="Seu email" required>
+                        <textarea placeholder="Sua mensagem" rows="5" required></textarea>
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i>
+                            Enviar Mensagem
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <i class="fas fa-code"></i>
+                        <span>snttoswx</span>
+                    </div>
+                    <p class="footer-description">
+                        Oferecemos os melhores cursos de programação e tecnologia do mercado, com metodologia prática e suporte especializado.
+                    </p>
+                    <div class="social-icons">
+                        <ul class="example-2">
+                            <li class="icon-content">
+                                <a href="https://github.com/snttoswx" aria-label="GitHub" data-social="github">
+                                    <div class="filled"></div>
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <div class="tooltip">GitHub</div>
+                            </li>
+                            <li class="icon-content">
+                                <a href="https://discord.com/users/snttoswx" aria-label="Discord" data-social="discord">
+                                    <div class="filled"></div>
+                                    <i class="fab fa-discord"></i>
+                                </a>
+                                <div class="tooltip">Discord</div>
+                            </li>
+                            <li class="icon-content">
+                                <a href="https://instagram.com/rochwxs" aria-label="Instagram" data-social="instagram">
+                                    <div class="filled"></div>
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <div class="tooltip">Instagram</div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal de Compra -->
+    <div id="modal-compra" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Finalizar Compra</h2>
+            <div class="compra-info">
+                <h3 id="modal-product-name">Produto</h3>
+                <p id="modal-product-description">Descrição do produto</p>
+                <div class="compra-preco">
+                    <span class="price" id="modal-product-price">R$ 0,00</span>
+                </div>
+            </div>
+            <div class="compra-metodos">
+                <h3>Método de Pagamento</h3>
+                <div class="metodo-pagamento active" data-metodo="pix">
+                    <i class="fas fa-qrcode"></i>
+                    <span>PIX</span>
+                </div>
+            </div>
+            <div class="compra-pix">
+                <h3>Pagamento via PIX</h3>
+                <p>Realize o pagamento via PIX usando a chave abaixo:</p>
+                <div class="pix-code">
+                    <span>iagosantosrocha67@gmail.com</span>
+                    <button class="btn-copy" data-clipboard-text="snttoswx">
+                        <i class="fas fa-copy"></i>
+                    </button>
+                </div>
+                <p class="pix-instruction">Após o pagamento, envie o comprovante para nosso WhatsApp:</p>
+                <a href="https://wa.me/5511939255690?text=Olá! Acabei de comprar o produto [PRODUTO] e gostaria de receber o acesso." class="btn btn-primary whatsapp-btn" id="whatsapp-link">
+                    <i class="fab fa-whatsapp"></i>
+                    Enviar Comprovante via WhatsApp
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+    <script src="ofuscador.js"></script>
+</body>
+</html>
